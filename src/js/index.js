@@ -23,10 +23,8 @@ var index = (function(){
         }
         
           /* create a stylesheet If none exist */
-         console.log('OUTI');
-        console.log(createFile);
+    
         if(createFile){
-            console.log('INNIE');
             var stylesheet = document.createElement('style');
             var head = document.head || document.getElementsByTagName('head')[0];
             stylesheet.className = 'pudding';
