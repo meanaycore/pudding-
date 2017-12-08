@@ -74,8 +74,10 @@ var index = (function(){
     /* single element style */
     
     var _ = function(styles){
+        
+        /* TODO: validate JSON */
        
-        /* validate JSON*/
+        /* If created a stylesheet */
         
         var style = document.getElementsByClassName('pudding')[0];
         
@@ -83,7 +85,7 @@ var index = (function(){
             return style.textContent = styles; 
         }
         
-        /* multiple or single styles */
+        /* If adding to an existing stylesheet */
      
         document.styleSheets[index].insertRule(styles);
     }
