@@ -32,10 +32,6 @@ var index = (function(){
     /* single element style */
     
     var _ = function(styles){
-        
-        /* TODO: validate JSON */
-    
-        console.log(styles);
       
         /* If created a stylesheet */
         
