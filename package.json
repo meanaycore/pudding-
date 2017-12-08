@@ -1,0 +1,19 @@
+{
+  "name": "pudding",
+  "version": "0.0.1",
+  "description": "This is my new project, It's called pudding, I don't know what it is yet.",
+  "main": "index.js",
+  "scripts": {
+    "test": "build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meanaycore/pudding-.git"
+  },
+  "author": "Akhona Mahlathi (meanaycore)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meanaycore/pudding-/issues"
+  },
+  "homepage": "https://github.com/meanaycore/pudding-#readme"
+}
