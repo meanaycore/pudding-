@@ -2,7 +2,7 @@
     Introduction info
 */
 
-var pudding = (function(){
+var index = (function(){
     'use strict';
 
     /*
@@ -20,6 +20,10 @@ var pudding = (function(){
             var head = document.head || document.getElementsByTagName('head')[0];
             stylesheet.className = 'pudding';
             head.appendChild(stylesheet);
+
+        /* grab existing stylesheets */
+
+        var styleList = document.styleSheets || [];
 
         return this;
 
@@ -41,10 +45,10 @@ var pudding = (function(){
     }
 
     return {
-             css  : css,
-             init : init
+            init: init,
+            css : css
     };
 
 })();
 
-module.exports = pudding;
+module.exports = index;
