@@ -45,8 +45,8 @@ var index = (function(){
     }
 
     return {
-            init: init,
-            css : css
+             css  : css,
+             init : init
     };
 
 })();
