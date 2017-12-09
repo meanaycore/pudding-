@@ -2,7 +2,7 @@
     Introduction info
 */
 
-var index = (function(){
+var pudding = (function(){
     'use strict';
 
     /*
@@ -51,4 +51,4 @@ var index = (function(){
 
 })();
 
-module.exports = index;
+module.exports = pudding;
