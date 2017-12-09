@@ -71,16 +71,25 @@ var app = __webpack_require__(1);
 
 var $ = app.init();
 
-$._(`body { 
-            background: green; 
-            color: red; 
-    } 
-    
-    html { 
-        border: 3px dashed white; 
-    } 
-    
+$.css(`
+        body {
+                background: green;
+                color: red;
+                animtion: flash 15s linear infinite;
+        }
+
+        @keyframes flash {
+            100% {
+                backgroud: red;
+                color: green;
+            }
+        }
+
+        html {
+            border: 3px dashed white;
+        }
 `);
+
 
 /***/ }),
 /* 1 */
@@ -92,57 +101,55 @@ $._(`body {
 
 var index = (function(){
     'use strict';
-    
-    /* 
+
+    /*
         init function
     */
-    
+
     var index = 0;
     var path = '';
-    
-    var init = function() 
+
+    var init = function()
     {
           /* create a stylesheet If none exist */
-    
+
             var stylesheet = document.createElement('style');
             var head = document.head || document.getElementsByTagName('head')[0];
             stylesheet.className = 'pudding';
             head.appendChild(stylesheet);
-        
+
         /* grab existing stylesheets */
-    
+
         var styleList = document.styleSheets || [];
-    
+
         return this;
-        
+
     }
-    
+
     /* single element style */
-    
-    var _ = function(styles){
-        
-        /* TODO: validate JSON */
-    
-        console.log(styles);
-      
+
+    var css = function(styles){
+
         /* If created a stylesheet */
-        
+
         var style = document.getElementsByClassName('pudding')[0];
-        
+
         if(style){
-            return style.textContent = styles; 
+            return style.textContent = styles;
         }
-        
+        return console.log('Error: Style element not found, refresh page !');
+
     }
-    
+
     return {
             init: init,
-            _ : _
+            css : css
     };
-    
+
 })();
 
 module.exports = index;
+
 
 /***/ })
 /******/ ]);
