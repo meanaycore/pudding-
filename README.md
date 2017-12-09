@@ -4,7 +4,7 @@ This is a tiny tiny library that allows one to cleanly define css styles inside 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
@@ -14,11 +14,9 @@ This project uses webpack so you will need to install that.
 
 A step by step series of examples that tell you have to get a development env running
 
-Git clone this repository to your project
+git clone this repository to your project
 
-```
-Give the example
-```
+
 1. git clone git@github.com:meanaycore/pudding-.git
 2. require it like any other webpack dependency
 
